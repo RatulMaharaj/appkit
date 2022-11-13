@@ -1,13 +1,6 @@
 module.exports = {
-  experimental: {
-    outputStandalone: true,
-  },
   images: {
-    domains: [
-      "avatars.githubusercontent.com",
-      "outlook.office365.com",
-      "media-exp1.licdn.com",
-    ],
+    domains: ["avatars.githubusercontent.com", "media-exp1.licdn.com"],
   },
   async redirects() {
     return [
