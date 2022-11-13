@@ -7,7 +7,7 @@
 
 ## Overview
 
-This template is intended to get a next app with nextAuth email + password set up and running in minutes.
+This template is intended to get a nextAuth + prisma + postgres app set up and running in minutes.
 
 The stack used in this app template is as follows:
 
@@ -43,7 +43,13 @@ NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="supersecret"
 ```
 
-### 3. Start the app
+### 3. Run prisma migrations
+
+```sh
+pnpm run migrate:dev
+```
+
+### 4. Start the app
 
 ```sh
 pnpm run dev
