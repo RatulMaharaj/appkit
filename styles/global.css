@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    @apply bg-accent1 text-white;
+  }
+
+  /* Autocomplete styles */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    background: none;
+    -webkit-text-fill-color: none;
+    -webkit-box-shadow: 0 0 0 0 none inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  * {
+    @apply font-OpenSans antialiased transition-colors;
+  }
+
+  body,
+  html {
+    @apply bg-white;
+  }
+
+  h4 {
+    @apply text-xs font-bold uppercase text-primary;
+  }
+
+  h2 {
+    @apply text-primary text-xl mt-2 mb-4;
+  }
+
+  h3 {
+    @apply uppercase text-[10px] text-primary font-bold;
+  }
+
+  p {
+    @apply text-sm text-secondary;
+  }
+
+  th {
+    @apply text-left;
+  }
+}
+
+@layer components {
+  .bg-pattern {
+    @apply bg-cover md:bg-contain bg-repeat;
+  }
+
+  .input-primary {
+    @apply h-12 px-4 my-2 w-96 block rounded-md border border-gray-300 focus:outline-purple-500 active:outline-purple-500 sm:text-sm hover:border-gray-400 outline-purple-500;
+  }
+
+  .input-secondary {
+    @apply rounded-md outline-none text-sm h-10 px-2 my-2 w-96 bg-primary border border-tertiary transition-all duration-100 hover:border-secondary text-primary focus:border-accent1;
+  }
+
+  .input-secondary:disabled {
+    @apply bg-gray-50 !text-gray-200;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl text-white hover:opacity-90 outline-none h-12 px-4 my-4 w-96 shadow-md hover:shadow-sm;
+  }
+
+  .btn-primary-small {
+    @apply rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-sm text-white hover:opacity-90 outline-none h-10 px-4 w-40 shadow-sm;
+  }
+
+  .btn-neutral-small {
+    @apply text-sm rounded-xl text-primary bg-primary border shadow-sm border-tertiary outline-none h-10 px-4 w-40 hover:opacity-80;
+  }
+
+  .btn-delete-small {
+    @apply text-sm rounded-xl text-red-500 bg-primary border shadow-sm border-red-500 outline-none h-10 px-4 w-40 hover:bg-red-500 hover:text-white;
+  }
+
+  .btn-primary-tiny {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-500 text-sm text-white hover:opacity-90 outline-none w-28 h-8 shadow-sm px-4 py-1 mr-2 rounded-lg;
+  }
+
+  .header {
+    @apply bg-primary h-16 border-b-[1px] border-tertiary p-4 flex flex-row items-center w-full sticky top-0 z-10;
+  }
+}
