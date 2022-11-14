@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
-import Layout from "../components/layout";
-import Profile from "../components/preferences/profile";
+import Layout from "../../components/layout";
+import Profile from "../../components/profile/currentUser";
 
 export default function Page() {
   const { data: session, status } = useSession();

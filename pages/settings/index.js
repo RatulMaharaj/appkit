@@ -1,7 +1,7 @@
 import { Switch } from "@headlessui/react";
 import { useSession } from "next-auth/react";
-import Layout from "../components/layout";
-import useLocalStorage from "../components/hooks/useLocalStorage";
+import Layout from "../../components/layout";
+import useLocalStorage from "../../components/hooks/useLocalStorage";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
