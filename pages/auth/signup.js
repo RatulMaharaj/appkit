@@ -69,7 +69,7 @@ export default function SignUp(props) {
   return (
     <div id="main" className="bg-pattern w-full h-screen">
       <Head>
-        <title>appkit - Sign Up</title>
+        <title>instavoice - Sign Up</title>
       </Head>
       <form
         onSubmit={(e) => e.preventDefault()}

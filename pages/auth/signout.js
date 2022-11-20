@@ -7,7 +7,7 @@ export default function Signout() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center">
       <Head>
-        <title>appkit - Sign Out</title>
+        <title>instavoice - Sign Out</title>
       </Head>
       <div className="bg-white px-10 py-20 rounded-lg flex flex-col items-center">
         <Logo />

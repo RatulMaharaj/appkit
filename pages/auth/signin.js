@@ -28,7 +28,7 @@ export default function SignIn({ csrfToken }) {
       className="bg-pattern w-full flex flex-col h-screen items-center justify-center"
     >
       <Head>
-        <title>appkit - Sign In</title>
+        <title>instavoice - Sign In</title>
       </Head>
       <form
         method="post"

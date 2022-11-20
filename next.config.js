@@ -1,6 +1,10 @@
 module.exports = {
   images: {
-    domains: ["avatars.githubusercontent.com", "media-exp1.licdn.com"],
+    domains: [
+      "avatars.githubusercontent.com",
+      "media-exp1.licdn.com",
+      "images.unsplash.com",
+    ],
   },
   async redirects() {
     return [

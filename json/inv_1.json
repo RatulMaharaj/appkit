@@ -1,0 +1,43 @@
+{
+  "id": 1,
+  "date": "2019-01-01",
+  "currency": "ZAR",
+  "consultant": {
+    "name": "Ratul Maharaj",
+    "email": "ratulmaharaj@looped.co.za",
+    "address": {
+      "street": "62 Snow Cat Close",
+      "suburb": "Royal Ascot",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "zip": "7441"
+    }
+  },
+  "client": {
+    "name": "Automators",
+    "contact": "Amin Chirazi",
+    "email": "amin.chirazi@automators.com",
+    "address": {
+      "street": "62 Snow Cat Close",
+      "suburb": "Royal Ascot",
+      "city": "Cape Town",
+      "country": "Austria",
+      "zip": "7441"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Capacities: App to manage capacities",
+      "hours": 1.0,
+      "rate": 4000.0
+    },
+    {
+      "id": 2,
+      "name": "Capacities: App to manage capacities",
+      "hours": 1.0,
+      "rate": 1250.0
+    }
+  ],
+  "tax": 0
+}

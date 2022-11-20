@@ -1,13 +1,12 @@
 import Layout from "../components/layout";
 import { useContext } from "react";
 import AppContext from "../components/context/appContext";
+import Example from "../components/stats";
 
 export default function Home() {
   return (
     <Layout title="Home">
-      <div className="header">
-        <Greeting />
-      </div>
+      <Example />
       <div className="w-full h-96 p-4"></div>
     </Layout>
   );

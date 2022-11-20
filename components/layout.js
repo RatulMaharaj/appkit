@@ -27,10 +27,10 @@ export default function Layout({ children, hideNav, title }) {
         <div className="flex flex-row w-full h-screen">
           {hideNav ? null : <Nav user={session?.user} />}
           <Head>
-            <title>Appkit {title ? `- ${title}` : ``}</title>
+            <title>instavoice {title ? `- ${title}` : ``}</title>
           </Head>
           <main
-            className={`bg-primary w-full h-full transition-all overflow-y-scroll`}
+            className={`bg-primary w-full h-full transition-all overflow-y-scroll pt-10 px-8`}
           >
             {children}
           </main>

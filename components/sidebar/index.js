@@ -1,10 +1,28 @@
 import React, { useState, useEffect } from "react";
-import { HomeIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  UsersIcon,
+  CreditCardIcon,
+  DocumentTextIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import UserProfile from "./userProfile";
 
 const navigation = [
   { name: "Dashboard", icon: HomeIcon, href: "/", current: false },
+  { name: "Clients", icon: UsersIcon, href: "/clients", current: false },
+  {
+    name: "Invoices",
+    icon: DocumentTextIcon,
+    href: "/invoices",
+    current: false,
+  },
+  {
+    name: "Payment Gateways",
+    icon: CreditCardIcon,
+    href: "/gateways",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -24,7 +42,7 @@ export default function Nav({ user }) {
           <Link href="/">
             <a>
               <div className="font-Lemon w-full text-xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500">
-                appkit
+                instavoice
               </div>
             </a>
           </Link>

@@ -21,8 +21,8 @@ The stack used in this app template is as follows:
 ### 1. Clone the repository and install dependencies
 
 ```
-git clone https://github.com/RatulMaharaj/appkit.git
-cd appkit
+git clone https://github.com/RatulMaharaj/instavoice.git
+cd instavoice
 pnpm install
 ```
 
@@ -33,7 +33,7 @@ Note that you will need to set up a local or cloud based postgres instance.
 Create a `.env` file with your database connection string as follows:
 
 ```sh
-DATABASE_URL="postgresql://postgres@localhost:5432/appkit?schema=public"
+DATABASE_URL="postgresql://postgres@localhost:5432/instavoice?schema=public"
 ```
 
 Create a `.env.local` file with the following variables:
